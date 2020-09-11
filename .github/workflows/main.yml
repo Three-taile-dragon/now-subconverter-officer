@@ -43,7 +43,7 @@ jobs:
         add-options: -A
     - name: Push changes
       run: |
-        git pull --rebase
+        git pull origin master --rebase
     - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
